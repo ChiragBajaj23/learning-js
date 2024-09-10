@@ -26,3 +26,27 @@ const myFunction = function() {
 
 
 // / js is dynamically typed -> Dynamically typed language: These are the languages that do not require any pre-defined data type for any variable as it is interpreted at runtime by the machine itself. In these languages, interpreters assign the data type to a variable at runtime depending on its value.
+
+//primitive(stack memory) non-primitive(heap)
+
+let oneName = "ChiragBajaj";
+let anotherName = oneName;
+anotherName = "BajajSahab";
+
+console.log(oneName); // ChiragBajaj
+console.log(anotherName);//BajajSahab
+// primitive main value copy hoti hai , refernece nhi diya jaata
+
+// ab non primitive ki baari
+let oneUser = {
+    email: "abc@gmail.com",
+    upi: "xyz@ybl"
+};
+
+let twoUser = oneUser;
+
+twoUser.email = "xyz@yahoo.com";
+
+console.log(oneUser);
+console.log(twoUser);
+//dono main email change ho jaega, yahi refernce diya jaata hai aur uspe change kiya jaata hai
